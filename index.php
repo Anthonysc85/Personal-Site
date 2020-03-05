@@ -14,8 +14,7 @@ if($_POST["submit"]) {
 
     $thankYou="<p>Thank you! Your message has been sent.</p>";
 }
-
-<!DOCTYPE HTML>
+?><!DOCTYPE HTML>
 
 <!-- Start of Async Drift Code -->
 <script>
@@ -186,7 +185,7 @@ drift.load('ughdd4z5c65v');
 								<h2>Contact</h2>
 							</header>
 							<div class="container">
-								<form method="post" action="contact.php">
+								<form method="post" action="index.php">
 									<div class="row gtr-uniform gtr-50">
 										<div class="col-6 col-12-xsmall">
 											<input type="text" name="sender" id="name" value="" placeholder="Name" />
