@@ -1,5 +1,20 @@
+<?php
 
-<!DOCTYPE HTML>
+if($_POST["submit"]) {
+    $recipient="anthonycowan@gmail.com";
+    $subject="Form to email message";
+    $sender=$_POST["sender"];
+    $senderEmail=$_POST["senderEmail"];
+    $category=$_POST["category"]
+    $message=$_POST["message"];
+
+    $mailBody="Name: $sender\nEmail: $senderEmail\nCategory: $category\n$message";
+
+    mail($recipient, $subject, $mailBody, "From: $sender <$senderEmail>");
+
+    $thankYou="<p>Thank you! Your message has been sent.</p>";
+}
+?><!DOCTYPE HTML>
 
 <!-- Start of Async Drift Code -->
 <script>
@@ -170,16 +185,13 @@ drift.load('ughdd4z5c65v');
 								<h2>Contact</h2>
 							</header>
 							<div class="container">
-
-								
-
-								<form method="post" action="contact.php">
+								<form method="post" action="index.php">
 									<div class="row gtr-uniform gtr-50">
 										<div class="col-6 col-12-xsmall">
-											<input type="text" name="name" id="name" value="" placeholder="Name" />
+											<input type="text" name="sender" id="name" value="" placeholder="Name" />
 										</div>
 										<div class="col-6 col-12-xsmall">
-											<input type="email" name="email" id="email" value="" placeholder="Email" />
+											<input type="email" name="senderEmail" id="email" value="" placeholder="Email" />
 										</div>
 										<div class="col-12">
 											<select name="category" id="category">
