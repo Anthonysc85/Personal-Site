@@ -4152,5 +4152,14 @@ input, select, textarea {
 
 	.site-link {
 		text-align: center;
+		
+}
+	
+	@media only screen and (min-width: 992px) {
+		.site-link {
+		text-align: center;
 		margin-top: -150px;
+		}
+		
+		
 
