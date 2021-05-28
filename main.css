@@ -4145,6 +4145,10 @@ input, select, textarea {
 	.mockup-container {
 		text-align: center;
 	}
+	
+	.project-container {
+		text-align: center;
+		width: 80%;
 
 	.site-link {
 		text-align: center;
