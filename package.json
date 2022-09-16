@@ -3,5 +3,8 @@
     "autoprefixer": "^10.4.11",
     "postcss": "^8.4.16",
     "tailwindcss": "^3.1.8"
+  },
+  "scripts": {
+    "build-css": "tailwindcss build -i style.css -o assets/css/style.css --watch"
   }
 }
