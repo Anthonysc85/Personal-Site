@@ -71,7 +71,6 @@ input, select, textarea {
 /*logo */
 	@media only screen and (min-width: 992px) {
   #cd_logo {height: 80px;
-  			width: 70px;
   			margin-top: -19px;
   			margin-left: -25px;}
   		}
@@ -2441,7 +2440,9 @@ input, select, textarea {
 		.icon:before {
 			-moz-osx-font-smoothing: grayscale;
 			-webkit-font-smoothing: antialiased;
-			display: inline-block;
+			display: flex;
+			align-items: center;
+			justify-content: center;
 			font-style: normal;
 			font-variant: normal;
 			text-rendering: auto;
@@ -2493,10 +2494,14 @@ input, select, textarea {
 			background: #272833;
 			border-radius: 100%;
 			cursor: default;
-			display: inline-block;
+			display: flex;
+			align-items: center;
+			justify-content: center;
 			height: 6em;
 			line-height: 5.65em;
-			margin: 0 0 2em 0;
+			margin-left: auto;
+			margin-right: auto;
+			margin-bottom: 2em;
 			text-align: center;
 			width: 6em;
 		}
@@ -3736,7 +3741,7 @@ input, select, textarea {
 						}
 
 				.spotlight .goto-next {
-					display: none;
+					
 				}
 
 		/* Wrapper */

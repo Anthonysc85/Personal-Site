@@ -404,7 +404,6 @@ object {
 Constrain images and videos to the parent width and preserve their intrinsic aspect ratio. (https://github.com/mozdevs/cssremedy/issues/14)
 */
 
-img,
 video {
   max-width: 100%;
   height: auto;
@@ -589,9 +588,33 @@ video {
   position: static;
 }
 
+.flex {
+  display: flex;
+}
+
+.w-0 {
+  width: 0px;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.fill-red-100 {
+  fill: #fee2e2;
+}
+
 .px-12 {
   padding-left: 3rem;
   padding-right: 3rem;
+}
+
+.pt-12 {
+  padding-top: 3rem;
 }
 
 .text-lg {
@@ -617,4 +640,9 @@ video {
 .text-blue-400 {
   --tw-text-opacity: 1;
   color: rgb(96 165 250 / var(--tw-text-opacity));
+}
+
+.text-red-100 {
+  --tw-text-opacity: 1;
+  color: rgb(254 226 226 / var(--tw-text-opacity));
 }
